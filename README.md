@@ -1,22 +1,28 @@
----
-title: Smart OCR
-emoji: 📄
-colorFrom: indigo
-colorTo: teal
-sdk: gradio
-sdk_version: 4.27.0
-app_file: app.py
-license: apache-2.0
----
+# 🤖 Smart OCR - Agentic AI Document Intelligence
 
-# Smart OCR (MVP)
+Welcome to **Smart OCR**, an intelligent document processing micro-agent that extracts and classifies text from scanned documents (invoices, receipts, statements, etc.) using a modular AI toolchain.
 
-Upload a document (receipt, invoice, etc.). It segments and extracts text using a simulated segmentation pipeline and OCR.
+## 🧠 Overview
 
-## Usage
+Smart OCR is designed as part of a larger **agentic AI architecture** for accounting and data processing. It automatically performs:
 
-1. Upload an image file
-2. Click submit
-3. Text is extracted and displayed
+- ✅ OCR extraction from images and PDFs
+- ✅ Preprocessing and document type classification
+- ✅ Vendor categorization and keyword-based tagging
+- ✅ Output to CSV or external accounting systems
 
-Runs on Hugging Face Spaces (free tier CPU). Future version will support SAM2 (Meta’s segmentation model) and GPU for better accuracy.
+Built with **Gradio**, this demo offers a visual interface to test the Smart OCR module in isolation.
+
+## 🚀 Usage
+
+1. Upload a document (image or PDF)
+2. The app performs:
+   - OCR with Tesseract or PaddleOCR
+   - Preprocessing (noise reduction, binarization)
+   - Optional classification
+3. See extracted text and metadata
+
+Try it live in the Gradio app interface! 👇
+
+## 🛠️ Project Structure
+
